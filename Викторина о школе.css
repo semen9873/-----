@@ -15,17 +15,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -153,6 +142,7 @@
 main {
     background-color:rgb(255, 255, 255);
     font-family:Calibri;
+    mardin-top: 60px;
 }
 
 
@@ -458,4 +448,5 @@ dialog::backdrop {
   10%, 30%, 50%, 70%, 90% { transform: translateX(-15px); }
   40%, 60%, 80% { transform: translateX(15px); }
 }
+
 
