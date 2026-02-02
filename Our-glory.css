@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 80px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #f9f9f9;
+    padding: 0 15px;
+}
+
+.header-outer {
+    position: fixed;
+    backdrop-filter: blur(10px);
+    top: 0;
+    background: rgba(255, 255, 255, 0.675);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    z-index: 10;
+    border-bottom: 2px solid rgb(213, 213, 213);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.363);
+}
+
+.header-navigation{
+  font-size: 1.125rem;
+  margin: 10px;
+  margin-left: 800px;
+  padding: 5px;
+  font-family: Calibri;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.vkladka1,.vkladka2,.vkladka3,.vkladka4,.vkladka5,.vkladka6{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: color 400ms;
+}
+
+.header-navigation a:hover {
+    color: rgb(0, 89, 255);
+}
+
+.our-glory {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.glory-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.glory-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.glory-text {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.glory-img {
+    display: block;
+    border-radius: 6px;
+    width: 250px;
+    margin: 0px 10px 0px 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.286);
+   transition: all 0.3s;
+}
+
+.glory-img.active{
+    transform: scale(2);
+}
+
+#need-a-transform.active{
+    transform: scale(2) rotate(90deg);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .header-outer {
+        height: 60px;
+    }
+
+    .header-navigation {
+        gap: 10px;
+        margin-left: 100px;
+    }
+
+    .vkladka {
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+
+    .our-glory {
+        padding: 15px;
+    }
+
+    .glory-content {
+        padding: 15px;
+    }
+
+    .glory-title {
+        font-size: 20px;
+    }
+
+    .glory-text {
+        font-size: 15px;
+    }
+
+    .glory-img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-top: 60px;
+        padding: 5px
+    }
+}
+
+/* ... предыдущие стили (без изменений) ... */
+
+
+/* ДОПОЛНИТЕЛЬНЫЕ АДАПТИВНЫЕ ПРАВИЛА */
+
+
+/* Для очень узких экранов (например, вертикальные смартфоны) */
+@media (max-width: 360px) {
+    .header-outer {
+        height: 50px;
+    }
+
+    .header-navigation {
+        padding: 5px 0;
+        gap: 8px;
+    }
+
+    .vkladka {
+        font-size: 0.9rem;
+        margin: 4px 0;
+    }
+
+    .glory-title {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .glory-text {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .glory-img {
+        max-width: 100%;
+        margin: 8px 0;
+        border-radius: 4px;
+    }
+
+    .our-glory {
+        padding: 10px;
+    }
+
+    .glory-content {
+        padding: 12px;
+        border-radius: 6px;
+    }
+}
+
+/* Для планшетов и небольших ноутбуков (768–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .our-glory {
+        padding: 25px;
+    }
+
+    .glory-content {
+        padding: 25px;
+    }
+
+    .glory-title {
+        font-size: 22px;
+    }
+
+    .glory-text {
+        font-size: 16px;
+    }
+
+    .glory-img {
+        max-width: 400px;
+        margin: 15px auto;
+    }
+}
+
+/* Для больших экранов (настольные ПК, мониторы >1024px) */
+@media (min-width: 1025px) {
+    .our-glory {
+        padding: 30px;
+    }
+
+    .glory-content {
+        padding: 30px;
+        max-width: 900px; /* Ограничиваем ширину контента */
+        margin: 0 auto;
+    }
+
+    .glory-title {
+        font-size: 26px;
+    }
+
+    .glory-text {
+        font-size: 17px;
+    }
+
+    .glory-img {
+        max-width: 500px;
+        margin: 20px auto;
+    }
+}
+
+/* Оптимизация для печати */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+        font-size: 12pt;
+    }
+
+    .header-outer,
+    .header-navigation {
+        display: none; /* Скрываем шапку при печати */
+    }
+
+    .glory-content {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+    .glory-img {
+        max-width: 100%;
+        height: auto;
+        filter: grayscale(100%); /* Ч/б изображения для экономии чернил */
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+}
+
+/* Улучшение доступности: фокус для клавиатурной навигации */
+.vkladka:focus {
+    outline: 2px solid rgb(0, 89, 255);
+    border-radius: 4px;
+}
+
+/* Плавный скролл для якорных ссылок */
+html {
+    scroll-behavior: smooth;
+}
