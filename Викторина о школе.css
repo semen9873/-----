@@ -195,35 +195,8 @@ main {
   margin: 20px 0;
 }
 
-.exit-btn {
-  position: fixed;
-  top: 70px;
-  left: 20px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: #c1cfff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  color: #333;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  z-index: 1000;
-}
 
-.exit-btn:hover {
-  background-color: #f0f0f0;
-  transform: scale(1.1);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
 
-.exit-btn:focus {
-  outline: 2px solid #007bff;
-  outline-offset: 2px;
-}
 
 /* Адаптивность: отступы для малых экранов */
 @media (max-width: 480px) {
@@ -277,7 +250,7 @@ dialog::backdrop {
 }
 
 #questionImage {
-  width: 200px;
+  width: 150px;
   height: auto;
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -448,5 +421,6 @@ dialog::backdrop {
   10%, 30%, 50%, 70%, 90% { transform: translateX(-15px); }
   40%, 60%, 80% { transform: translateX(15px); }
 }
+
 
 
