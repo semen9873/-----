@@ -15,17 +15,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +48,7 @@
 .nav-menu {
   display: flex;
   gap: 30px;
-  margin: 0px 110px 0px 0px;
+  margin: 0px 150px 0px 0px;
 }
 
 .nav-item {
@@ -500,3 +489,4 @@ dialog::backdrop {
   10%, 30%, 50%, 70%, 90% { transform: translateX(-15px); }
   40%, 60%, 80% { transform: translateX(15px); }
 }
+
