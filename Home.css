@@ -96,7 +96,7 @@ header:hover{
   font-size: 1.125rem;
   font-family: Calibri;
   margin: 10px;
-  margin-left: 130px;
+  margin-left: 100px;
   padding: 5px;
   color: white;
   border: 1px solid transparent;
@@ -386,3 +386,4 @@ main {
     margin: 16px 0 10px;
   }
 }
+
