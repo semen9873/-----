@@ -47,7 +47,7 @@ body {
 .header-navigation{
   font-size: 1.125rem;
   margin: 10px;
-  margin-left: 650px;
+  margin-left: 500px;
   padding: 5px;
   font-family: Calibri;
   display: flex;
@@ -273,5 +273,6 @@ main {
 .chat-messages {
     -ms-overflow-style: none;  /* скрывает скроллбар */
 }
+
 
 
