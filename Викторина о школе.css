@@ -188,15 +188,6 @@ main {
   overflow: hidden;
 }
 
-#questionImage {
-  max-width: 150px;
-  width: 150px;
-  border-radius: 8px;
-  margin: 20px 0;
-}
-
-
-
 
 /* Адаптивность: отступы для малых экранов */
 @media (max-width: 480px) {
@@ -255,6 +246,8 @@ dialog::backdrop {
   transition: transform 0.3s ease;
   cursor: pointer;
   position: relative;
+  margin: 5px 0px;
+  border-radius: 3px;
 }
 
 #questionImage.active {
@@ -421,6 +414,7 @@ dialog::backdrop {
   10%, 30%, 50%, 70%, 90% { transform: translateX(-15px); }
   40%, 60%, 80% { transform: translateX(15px); }
 }
+
 
 
 
