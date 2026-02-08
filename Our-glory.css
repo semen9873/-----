@@ -76,13 +76,17 @@ body {
 }
 
 .glory-img {
-    cursor: pointer;
+    
     display: block;
     border-radius: 6px;
     width: 250px;
     margin: 0px 10px 0px 100px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.286);
    transition: all 0.3s;
+}
+
+.glory-img:hover{
+    cursor: pointer;
 }
 
 .glory-img.active{
@@ -277,4 +281,5 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 
