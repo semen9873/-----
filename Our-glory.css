@@ -76,7 +76,6 @@ body {
 }
 
 .glory-img {
-    cursor: default;
     display: block;
     border-radius: 6px;
     width: 250px;
@@ -281,6 +280,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 
 
 
