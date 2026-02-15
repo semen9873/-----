@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.header-outer{
+  position: fixed;
+  backdrop-filter: blur(5px);
+  top: 0;
+  background: rgba(255, 255, 255, 0.675);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  z-index: 10;
+  border-bottom: 2px solid rgb(213, 213, 213);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.363);
+}
+
+
+
+
+
+.header-logo img {
+    opacity: 1;
+    margin: 5px 10px 0px 5px;
+    border: 2px solid rgb(0, 30, 255);
+    position: absolute;
+    
+    width: 6%;
+    transition: all 0.3;
+}
+
+.header-logo img:hover {
+    opacity: 0.95;
+}
+
+.header-navigation{
+  font-size: 1.125rem;
+  margin: 10px;
+  margin-left: 800px;
+  padding: 5px;
+  font-family: Calibri;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.vkladka1,.vkladka2,.vkladka3,.vkladka4,.vkladka5,.vkladka6{
+  color: rgb(0, 0, 0);
+  margin: 0px 10px 0px 10px;
+  border-radius: 0px;
+  transition: border-radius 400ms,border-color 400ms, background-color 400ms, color 400ms;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  
+  
+}
+
+.header-navigation a:hover{
+  color: rgb(0, 89, 255);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 0 1rem;
+}
+
+.author-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.author-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.author-info {
+    padding: 2rem;
+    flex: 1;
+    
+}
+
+h2.animated-gradient {
+  font-size: 2rem;
+  color: transparent;
+  
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+
+  background-image: linear-gradient(
+    45deg,
+    #8a78da,
+    #533de4,
+    #220975,
+    #020041,
+    #22209b,
+    #5686d4,
+    #4d4acf,
+    #8a78da
+  );
+  
+
+  background-size: 300% 100%;
+  
+
+  animation: gradientAnimation 8s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+
+
+.author-title {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.author-bio {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    color: #000;
+    
+}
+
+.author-skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+.author-skills li {
+    background-color: #e1dfff;
+    color: #002e79;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.contact-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    background-color: #170071;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.contact-link:hover {
+    background-color: #22229b;
+}
+
+.fun-fact {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fun-fact p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+#factButton {
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(140deg, #020d3f 0%, #596aeb 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+#factButton:hover {
+  opacity: 0.9;
+}
+
+.fact-display {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #596aeb67;
+    border-left: 4px solid #020d3f;
+    color: #020d3f;
+    border-radius: 4px;
+    display: none;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .author-card {
+        flex-direction: column;
+    }
+
+    .author-photo {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 3px solid #4CAF50;
+    }
+}
